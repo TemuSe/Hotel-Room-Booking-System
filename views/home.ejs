@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethio Hotel</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="content flex-space">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="navlinks">
+                <ul id="menuList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/service">Service</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/login" class="primary-btn">Book Now</a></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menuToggle()"></span>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="https://pix10.agoda.net/hotelImages/197090/0/b4dfaedcc725eb00fa5e9d6966e36e93.jpg?ca=7&ce=1&s=1024x768"
+                        alt="">
+                    <div class="text">
+                        <h1>Book your sweet room</h1>
+                        <p>Ethio Hotel with standard beautiful rooms. It is your time to book!</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read more</button>
+                            <button class="secondary-btn">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://pix10.agoda.net/hotelImages/197090/0/c8eb8aa206227be534d9a1bef25c91f9.jpg?ca=7&ce=1&s=1024x768"
+                        alt="">
+                    <div class="text">
+                        <h1>Spend your time</h1>
+                        <p>Many people say that life isn't like a bed of roses. I beg to differ. I think that life is
+                            quite like a bed of roses.</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read more</button>
+                            <button class="secondary-btn">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://pix10.agoda.net/hotelImages/2289303/462036881/3bff4ab751f7576cde6a5bb2ce415de0.jpg?ca=24&ce=0&s=1024x768"
+                        alt="">
+                    <div class="text">
+                        <h1>Spend your time</h1>
+                        <p>Many people say that life isn't like a bed of roses. I beg to differ. I think that life is
+                            quite like a bed of roses.</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read more</button>
+                            <button class="secondary-btn">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        var menu = document.getElementById('menuList');
+        menu.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (menu.style.maxHeight == "0px") {
+                menu.style.maxHeight = "100vh"
+            }
+            else {
+                menu.style.maxHeight = "0px";
+            }
+        }
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>Welcome</h1>
+                    <h2>Ethio Hotel</h2>
+                </div>
+                <p>There was a time and a place for Stephanie to use her magic. The problem was that she had a difficult
+                    time determining this.
+                    She wished she could simply use it when the desire hit and there wouldn't be any unforeseen
+                    consequences.
+                    She put the pen to paper but she couldn't bring herself to actually write anything. She just stared
+                    at the blank card and
+                    wondered what words she could write that would help in even a small way.
+                </p>
+            </div>
+            <div class="right">
+                <img src="https://www.momondo.com/rimg/himg/09/29/13/expediav2-52254-168aed-674083.jpg?width=1366&height=768&crop=true"
+                    alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>10000</h1>
+                <hr>
+                <span>Customers</span>
+            </div>
+            <div class="box">
+                <h1>9000</h1>
+                <hr>
+                <span>Happy Customers</span>
+            </div>
+            <div class="box">
+                <h1>200</h1>
+                <hr>
+                <span>Rooms</span>
+            </div>
+            <div class="box">
+                <h1>400</h1>
+                <hr>
+                <span>Employees</span>
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+    <section class="gallery">
+        <div class="container top">
+            <div class="heading">
+                <h1>Photos</h1>
+                <h2>Our gallery</h2>
+                <p>Sometimes there isn't a good answer. No matter how you try to rationalize the outcome</p>
+            </div>
+        </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2019/06/25/Bahir-Dar-Hilton-Hotel---Typical-King-Guest-Room.1561451726.9585.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 4
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+
+
+    <section class="customer top">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Greg understood that this situation would make Michael terribly uncomfortable. Michael simply had
+                        no idea what was about to come and even though Greg could prevent it from happening, he opted to
+                        let it happen.</p>
+                    <h3>Temesg Geta</h3>
+                    <label>Customer</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Greg understood that this situation would make Michael terribly uncomfortable. Michael simply had
+                        no idea what was about to come and even though Greg could prevent it from happening, he opted to
+                        let it happen.</p>
+                    <h3>Bernaldo</h3>
+                    <label>Customer</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>Greg understood that this situation would make Michael terribly uncomfortable. Michael simply had
+                        no idea what was about to come and even though Greg could prevent it from happening, he opted to
+                        let it happen.</p>
+                    <h3>Quiteria</h3>
+                    <label>Customer</label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                700: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="images/logo.png" alt="">
+                <p>A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block
+                    can often happen due to being stuck with a current project that the writer is trying to complete.
+                </p>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-telegram"></i>
+
+                </div>
+            </div>
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Services</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </div>
+            <div class="box ">
+                <h2>Contact us</h2>
+                <p>Another writing challenge can be to take the individual sentences in the random paragraph and
+                    incorporate a single sentence from that into a new paragraph to create a short story. </p>
+                <i class="fa fa-location-dot"></i>
+                <label>395001 Athwaline, Surat, India</label>
+                <br>
+                <i class="fa fa-phone"></i>
+                <label>[91] 123 654 989</label><br>
+                <i class="fa fa-envelope"></i>
+                <label>info@ethio.com</label>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="legal">
+        <p class="container">&#169 2022 Ethio Hotel. All Rights Reserved.</p>
+
+    </div>
+
+</body>
+
+</html>

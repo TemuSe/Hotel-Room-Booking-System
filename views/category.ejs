@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="content flex-space">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="navlinks">
+                <ul id="menuList">
+                  
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menuToggle()"></span>
+
+            </div>
+
+        </div>
+    </header>
+    
+    <section class="book">
+        <div class="container flex-space">
+            <div class="text">
+                <h1><span>Book </span>your room</h1>
+            </div>
+            <div class="form">
+                <form class="grid" action="/category" method="POST">
+                    <input name="date1" type="date" placeholder="Arrival date">
+                    <input name="date2" type="date" placeholder="Departure date">
+                    <!-- <input name="type" type="checkbox" placeholder="Type"> -->
+                    <select name="type" class="form-select" aria-label="Default select example">
+                        <option selected>Type</option>
+                        <option value="Single bed">Single bed</option>
+                        <option value="Double bed">Double bed</option>
+                    </select>
+                    <input name="guest" type="number" placeholder="Guest">
+                    <input type="submit" value="Check Availability">
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+<footer>
+    <div class="container grid">
+        <div class="box">
+            <img src="images/logo.png" alt="">
+            <p>A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete.</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+
+            </div>
+        </div>
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Services</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+        <div class="box ">
+            <h2>Contact us</h2>
+            <p>Another writing challenge can be to take the individual sentences in the random paragraph and incorporate a single sentence from that into a new paragraph to create a short story. </p>
+            <i class="fa fa-location-dot"></i>
+            <label>395001 Athwaline, Surat, India</label>
+            <br>
+            <i class="fa fa-phone"></i>
+            <label>[91] 123 654 989</label><br>
+            <i class="fa fa-envelope"></i>
+            <label>info@ethio.com</label>
+        </div>
+    </div>
+
+</footer>
+
+<div class="legal">
+    <p class="container">&#169 2022 Ethio Hotel. All Rights Reserved.</p>
+
+</div>
+    
+</body>
+</html>

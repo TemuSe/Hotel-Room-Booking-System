@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="content flex-space">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="navlinks">
+                <ul id="menuList">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/service">Service</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/login" class="primary-btn">Book Now</a></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menuToggle()"></span>
+
+            </div>
+
+        </div>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var menu = document.getElementById('menuList');
+        menu.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (menu.style.maxHeight == "0px") {
+                menu.style.maxHeight = "100vh"
+            }
+            else {
+                menu.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+<section class="news top rooms">
+    <div class="container">
+        <div class="heading">
+            <h1>News</h1>
+            <h2>Our news</h2>
+            <p>The shoes had been there for as long as anyone could remember. In fact, it was difficult for anyone to come up with a date they had first appeared.</p>
+        </div>
+        <div class="content flex">
+            <div class="left grid2">
+                <div class="items">
+                    <div class="image">
+                        <img src="images/room3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>New important informations!</h2>
+                        <div class="admin flex">
+                            <i class="fa fa-user"></i>
+                            <label>Admin</label>
+                            <i class="fa fa-heart"></i>
+                            <label>500</label>
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <p>It had seemed they'd always been there and yet they seemed so out of place.</p>
+                    </div>
+
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="images/room3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>New important informations!</h2>
+                        <div class="admin flex">
+                            <i class="fa fa-user"></i>
+                            <label>Admin</label>
+                            <i class="fa fa-heart"></i>
+                            <label>500</label>
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <p>It had seemed they'd always been there and yet they seemed so out of place.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="box flex">
+                    <div class="img">
+                        <img src="images/room3.jpg" alt="">
+                    </div>
+                    <div class="stext">
+                        <h2>Latest ethio news</h2>
+                        <p>Why nobody had removed them was a question that had been asked time and again, but while they all thought it, nobody had ever found the energy to actually do it. </p>
+                    </div>
+
+                </div>
+                <div class="box flex">
+                    <div class="img">
+                        <img src="images/room3.jpg" alt="">
+                    </div>
+                    <div class="stext">
+                        <h2>Latest ethio news</h2>
+                        <p>Why nobody had removed them was a question that had been asked time and again, but while they all thought it, nobody had ever found the energy to actually do it. </p>
+                    </div>
+
+                </div>
+                <div class="box flex">
+                    <div class="img">
+                        <img src="images/room3.jpg" alt="">
+                    </div>
+                    <div class="stext">
+                        <h2>Latest ethio news</h2>
+                        <p>Why nobody had removed them was a question that had been asked time and again, but while they all thought it, nobody had ever found the energy to actually do it. </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="container grid">
+        <div class="box">
+            <img src="images/logo.png" alt="">
+            <p>A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete.</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
+
+            </div>
+        </div>
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Services</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+        <div class="box ">
+            <h2>Contact us</h2>
+            <p>Another writing challenge can be to take the individual sentences in the random paragraph and incorporate a single sentence from that into a new paragraph to create a short story. </p>
+            <i class="fa fa-location-dot"></i>
+            <label>395001 Athwaline, Surat, India</label>
+            <br>
+            <i class="fa fa-phone"></i>
+            <label>[91] 123 654 989</label><br>
+            <i class="fa fa-envelope"></i>
+            <label>info@ethio.com</label>
+        </div>
+    </div>
+
+</footer>
+
+<div class="legal">
+    <p class="container">&#169 2022 Ethio Hotel. All Rights Reserved.</p>
+
+</div>
+    
+</body>
+</html>
